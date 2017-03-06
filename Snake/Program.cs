@@ -31,6 +31,9 @@ namespace Snake
 
         static void Main(string[] args)
         {
+            FileStream fs = new FileStream("save.xml", FileMode.Create);
+            fs.Close();
+            
         VeryBegin:
             Point p;
             int l = 1;
